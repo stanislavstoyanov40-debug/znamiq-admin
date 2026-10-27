@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="ZnamIQ admin panel.">
+
+  <!-- Best-effort protection against being shown inside another site's
+       frame (GitHub Pages cannot send X-Frame-Options or CSP headers): the
+       page stays hidden unless it is the top-level page. -->
+  <style id="anti-frame">html { display: none !important; }</style>
+  <script>
+    if (window.self === window.top) {
+      var antiFrame = document.getElementById('anti-frame');
+      antiFrame.parentNode.removeChild(antiFrame);
+    } else {
+      window.top.location = window.self.location;
+    }
+  </script>
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ZnamIQ Admin">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ZnamIQ Admin</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
